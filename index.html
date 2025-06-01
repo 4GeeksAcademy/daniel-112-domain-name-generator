@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Name Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+</head>
+
+
+<body style="background-color: black;">
+ 
+    <!-- Botón para generar con Console.log -->
+    <div class="d-flex justify-content-center my-5">
+        <button onclick="generateDomainsConsole()" class="btn btn-primary rounded fw-bold">Generate Domain Names in the Console (log)</button>
+    </div>
+
+    <!-- Botón para generar dentro del HTML, en la caja de abajo -->
+    <div class="d-flex justify-content-center my-5">
+        <button onclick="generateDomainsHTML()" class="btn btn-light rounded fw-bold">Generate Domain Names in the HTML</button>
+    </div>
+
+    <!-- Caja de texto para el botón que genera en el HTML -->
+    <div class="bg-white rounded-4 mx-auto flex-column d-flex justify-content-center align-items-center" style="width: 40rem; min-height: 150px;"> <!-- El ancho es relativo y la altura fija para no mover el botón de altura con las nuevas generaciones de texto -->
+
+        <div class="fs-4 text-center my-3">
+            <p id="domains" class="text-secondary">⬆️ Click on "Generate Domain Names in the HTML" ⬆️</p>
+        </div>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    
+</body>
+
+
+</html>
